@@ -21,7 +21,7 @@
             font-style: normal;
         }
     </style>
-
+    <script src="https://kit.fontawesome.com/639ee43a7b.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -41,12 +41,62 @@
     <!--Header Section-->
     <header>
         <!--Navbar-->
-        <nav>
+        <nav class="bg-[#FFF9F4]">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Find a pet</a></li>
+                            <li><a>Breeds</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <img src="c1-assets/logo-header.png" alt="">
+                        <a>Browse<span class="text-orange-400">4</span>Pets</a>
+                    </div>
+
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end lg:flex gap-3">
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a class="btn border-2 border-[#FFDC26] bg-transparent">Login</a>
+                    <a class="btn btn-warning bg-[#FFDC26] px-6">Register</a>
+                </div>
+            </div>
 
         </nav>
         <!--Banner-->
         <Section>
-
+            <div class="container mx-auto">
+                <div class="hero min-h-screen items-start justify-start bg-[url('c1-assets/cat-big.png')] bg-center bg-cover">
+                    <div class="hero-content">
+                        <div class="max-w-96">
+                            <h1 class="mb-5 text-3xl font-bold">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
+                            <p class="mb-5">
+                                Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop
+                                now and make tails wag with joy!
+                            </p>
+                            <button class="btn btn-primary">Find a pet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>F
         </Section>
 
     </header>
